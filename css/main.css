@@ -1,0 +1,167 @@
+/*! HTML5 Boilerplate v7.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+  font-family: 'sofia_prolight';
+  src: url('../fonts/SofiaProLight-webfont.eot');
+  src: url('../fonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SofiaProLight-webfont.woff2') format('woff2'),
+        url('../fonts/SofiaProLight-webfont.woff') format('woff'),
+        url('../fonts/SofiaProLight-webfont.ttf') format('truetype'),
+        url('../fonts/SofiaProLight-webfont.svg#sofia_prolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-text: rgb(54, 63, 165);
+}
+
+html {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  align-items: center;
+  background: #A1FFCE;
+  background: linear-gradient(to bottom, rgb(174, 191, 235), rgb(224, 219, 251));
+  display: flex;
+  font-family: "sofia_prolight", sans-serif;
+  height: 100vh;
+  justify-content: center;
+  min-height: 100px;
+}
+
+
+h2, h3 {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.logo {
+  margin: 2rem 0;
+  fill: var(--color-text);
+}
+
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
