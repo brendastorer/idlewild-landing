@@ -89,7 +89,7 @@ html {
 body {
   align-items: center;
   background: #A1FFCE;
-  background: linear-gradient(to bottom, rgb(174, 191, 235), rgb(224, 219, 251));
+  background: linear-gradient(to top, rgb(174, 191, 235), rgb(224, 219, 251));
   display: flex;
   font-family: "sofia_prolight", sans-serif;
   height: 100vh;
@@ -109,6 +109,11 @@ h1, h2, h3 {
 .logo {
   margin: 2rem 0;
   fill: var(--color-text);
+}
+
+.tagline span {
+  margin: 0 0.2em;
+  white-space: nowrap;
 }
 
  /* ==========================================================================
